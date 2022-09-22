@@ -1,11 +1,15 @@
-import './App.css';
-
-function App() {
+import React from "react";
+import Nav from "./components/Nav";
+import Form from "./components/Form";
+import Home from "./components/home";
+const App = () => {
   return (
     <div className="App">
-     <h1>Ajitkumar</h1>
+      <Nav />
+      <Form />
+      <Home />
     </div>
   );
-}
+};
 
 export default App;

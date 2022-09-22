@@ -1,13 +1,121 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  /* background-color: gold; */
+}
+/*-----------------nav------------*/
+nav {
+  height: 10vh;
+  width: 100%;
+  background-color: #6791fd;
+  display: flex;
+  align-items: center;
+  padding: 3vh 5vw;
+  justify-content: space-between;
+}
+nav .logo img {
+  height: 9vh !important;
+}
+.logo-txt {
+  flex: 1;
+  color: white;
+  font-weight: 200;
+  margin-left: 25px;
+}
+.logo-txt h1 {
+  font-size: 1.5rem;
+}
+.logo-txt h2 {
+  font-size: 1.1rem;
+}
+.nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.btn {
+  color: white;
+  cursor: pointer;
+  padding: 8px 25px;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+.btn:hover {
+  color: #6791fd;
+  background-color: white;
+}
+/*form*/
+.container {
+  width: 100vw;
+  min-height: 90vh;
+  /* background: purple; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+form.login {
+  padding: 40px 50px;
+  border-radius: 15px;
+  background-color: #6791fd64;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 35px 0;
+}
+#role-list,
+.field {
+  width: 450px;
+  background-color: #6791fd64;
+  padding: 15px 25px !important;
+  outline: none;
+  border: none !important;
+  border-radius: 7px;
+  color: rgb(69, 69, 69);
+}
+.box::placeholder {
+  color: rgb(33, 33, 33) !important;
+}
+.Home {
+  background: url('./imgs/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.left {
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  margin-left: 8vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn-b {
+  width: fit-content;
+  background-color: #6791fd;
+  border: none;
+  padding: 12px 35px;
+}
+.btn-b:hover {
+  color: white;
+  background-color: #4276f9;
+}
+.left h1 {
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+.left h2 {
+  margin-top: 10px;
+  font-weight: lighter;
 }
